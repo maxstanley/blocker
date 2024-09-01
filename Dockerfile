@@ -8,7 +8,7 @@ RUN apk add --no-cache make tar gzip
 ADD https://github.com/coredns/coredns/archive/refs/tags/v1.11.3.tar.gz /opt/coredns.tar.gz
 
 RUN tar xzf /opt/coredns.tar.gz -C /opt/ && \
-    mv /opt/coredns-1.11.3 /opt/coredns
+	mv /opt/coredns-1.11.3 /opt/coredns
 
 WORKDIR /opt/coredns
 
